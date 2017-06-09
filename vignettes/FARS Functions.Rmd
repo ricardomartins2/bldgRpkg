@@ -1,0 +1,42 @@
+---
+title: "FARS: Fatality Analysis Reporting System"
+author: "Trenton Hoffman"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, setup, include = FALSE} 
+#library(bldgRpkg)
+library(dplyr)
+devtools::load_all()
+```
+This package was prepared as an excercise for Coursera's "Building an R Package" course.
+It contains several functions for interacting with Fatality Analysis Reporting System (FARS) data.
+
+## Create File Name and Read Data
+```{r, readwrite}
+filename <- make_filename("2013")
+data <- fars_read(filename)
+```
+
+
+## Read data for a list of years - Store in List of data frames
+```{r, read_years}
+years <- fars_read_years(2013)
+head(years)
+```
+
+## Summarize Years of Data
+
+```{r, summarize}
+fars_summarize_years(2013)
+```
+
+## Map State Data for a chosen Year
+```{r, map}
+## Georgia, 2013
+fars_map_state(13,2013)
+```
