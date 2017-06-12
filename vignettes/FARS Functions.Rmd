@@ -9,7 +9,8 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 ```{r, setup, include = FALSE} 
-#library(bldgRpkg)
+##
+library(bldgRpkg)
 #library(dplyr)
 #devtools::load_all()
 ```
