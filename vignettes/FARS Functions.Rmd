@@ -10,7 +10,6 @@ vignette: >
 ---
 ```{r, setup, include = FALSE} 
 library(bldgRpkg)
-library(tidyverse)
 ```
 This package was prepared as an excercise for Coursera's "Building an R Package" course.
 It contains several functions for interacting with Fatality Analysis Reporting System (FARS) data.

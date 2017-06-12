@@ -46,7 +46,9 @@ fars_read <- function(filename) {
 #' @export
 make_filename <- function(year) {
     year <- as.integer(year)
-    sprintf("accident_%d.csv.bz2", year)
+    filename <- sprintf("accident_%d.csv.bz2", year)
+    filename <- system.file('extdata', filename, package = "bldgRpkg")
+    filename
 }
 
 #' Get Months and Year from Accident Data Files
