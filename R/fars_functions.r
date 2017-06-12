@@ -63,6 +63,7 @@ make_filename <- function(year) {
 #' years requested are not available.
 #'
 #' @importFrom dplyr mutate select
+#' @importFrom magrittr %>%
 #'
 #' @examples
 #' \dontrun{
@@ -99,6 +100,7 @@ fars_read_years <- function(years) {
 #'
 #' importFrom dplyr bind_rows group_by summarize
 #' importFrom tidyr spread
+#' importFrom magrittr %>%
 #'
 #' @examples
 #' \dontrun{

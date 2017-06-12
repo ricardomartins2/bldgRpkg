@@ -15,6 +15,7 @@ the specified years.
 
 importFrom dplyr bind_rows group_by summarize
 importFrom tidyr spread
+importFrom magrittr %>%
 }
 \description{
 Accepts a list of years \code{years} and provides a summary of total
