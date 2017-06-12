@@ -14,3 +14,10 @@ Suggests: knitr,
     testthat
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
+Imports: dplyr,
+    maps,
+    magrittr,
+    readr,
+    tidyr,
+    tibble,
+    graphics
