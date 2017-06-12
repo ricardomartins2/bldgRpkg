@@ -1,4 +1,4 @@
 # bldgRpkg
 Building R Packages Coursera
 
-https://travis-ci.org/tchoffman/bldgRpkg.svg?branch=master
+[![Build Status](https://travis-ci.org/tchoffman/bldgRpkg.svg?branch=master)](https://travis-ci.org/tchoffman/bldgRpkg)
