@@ -1,20 +1,21 @@
 ---
-title: "bldgRpkg: FARS (Fatality Analysis Reporting System)"
+title: "FARS: Fatality Analysis Reporting System"
 author: "Trenton Hoffman"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Use of FARS functions in bldgRpkg exercise}
+  %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-
+```{r, setup, include = FALSE} 
+library(bldgRpkg)
+```
 This package was prepared as an excercise for Coursera's "Building an R Package" course.
 It contains several functions for interacting with Fatality Analysis Reporting System (FARS) data.
 
 ## Create File Name and Read Data
 ```{r, readwrite}
-#library(bldgRpkg)
 filename <- make_filename("2013")
 data <- fars_read(filename)
 ```
