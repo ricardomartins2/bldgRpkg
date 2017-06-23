@@ -7,7 +7,7 @@
 fars_read_years(years)
 }
 \arguments{
-\item{year}{Years of data to be retrieved.}
+\item{years}{Years of data to be retrieved.}
 }
 \value{
 Returns a list of (data.frames) representing the month and year
