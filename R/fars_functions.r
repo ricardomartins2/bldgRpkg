@@ -56,7 +56,7 @@ make_filename <- function(year) {
 #' @description
 #' Extracts Month and Year data from Accident datafiles for specified years.
 #'
-#' @param year Years of data to be retrieved.
+#' @param years Years of data to be retrieved.
 #'
 #' @return Returns a list of (data.frames) representing the month and year
 #' data from available Accident data files.  Provides and error message if
